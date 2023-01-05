@@ -6,7 +6,7 @@
       <v-container>
         <div class="grey--text text--darken-3 my-4 mb-8 mb-md-8">
           <v-row>
-            <v-col cols="12 px-12" class="py-4">
+            <v-col cols="12 px-12" class="py-4 py-sm-6 py-md-8 py-lg-12">
               <div
                 class="body text-lg-h6 text-xl-h4 font-weight-regular grey--text text--darken-3"
               >
@@ -25,12 +25,12 @@
     </div>
 
     <contact-form @close="snackbarMessage"></contact-form>
-    <!-- <GmapMap :center="center" :zoom="12" style="width: 100%; height: 400px">
+    <GmapMap :center="center" :zoom="12" style="width: 100%; height: 400px">
       <GmapMarker
         :position="center"
         label="Kodaikanal Trip Advisor"
       ></GmapMarker>
-    </GmapMap> -->
+    </GmapMap>
 
     <custom-footer></custom-footer>
     <v-snackbar v-model="snackbar" timeout="2000" :color="color" top right>

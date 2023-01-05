@@ -16,7 +16,7 @@
         class="mx-4 mb-2 mb-sm-8 mt-0 mt-sm-6 primary"
       ></v-divider>
       <v-row class="my-4 my-sm-0">
-        <div class="cottageList mb-0" style="max-height: 2078px">
+        <div class="cottageList mb-0 mx-auto" style="max-height: 2078px">
           <v-col
             cols="12"
             v-for="(cottage, index) in cottages"
@@ -62,13 +62,14 @@ export default {
       this.$axios.delete(`api/cottages/${id}`).then(() => this.initialise());
     },
     initialise() {
-      // this.$axios
-      //   .get("https://kodaiguide.in/cottagelist.json", {
-      //     "content-type": "application/json",
-      //   })
-      //   .then((res) => {
-      //     this.cottages = res.body.cottages;
-      //   });
+      this.$axios
+        .get("https://kodaiguide.in/cottagelist.json", {
+          "content-type": "application/json",
+        })
+        .then((res) => {
+          console.log(res);
+          this.cottages = res.data.cottages;
+        });
     },
   },
   created() {
