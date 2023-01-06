@@ -4,7 +4,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - kodai",
-    title: "kodai",
+    title: "Kodaikanal Trip Advisor",
     script: [
       { hid: "stripe", src: "https://smtpjs.com/v3/smtp.js", defer: true },
     ],
@@ -17,7 +17,7 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/kodailogo.jpg" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

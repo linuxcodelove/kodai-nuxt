@@ -27,19 +27,34 @@
         <v-col xs="6" sm="3" lg="4">
           <h2 class="mb-6 mb-md-12">NAVIGATION</h2>
           <div class="subtitle-2">
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/')">Home</h4>
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/cottages')">
+            <h4 class="mb-2 mb-sm-5 clickable" @click="$router.push('/')">
+              Home
+            </h4>
+            <h4
+              class="mb-2 mb-sm-5 clickable"
+              @click="$router.push('/cottages')"
+            >
               Cottages
             </h4>
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/rentalcars')">
+            <h4
+              class="mb-2 mb-sm-5 clickable"
+              @click="$router.push('/rentalcars')"
+            >
               Rental Cars
             </h4>
-            <h4 class="mb-2 mb-sm-5">Real Estate</h4>
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/about')">About</h4>
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/contact')">
+            <h4 class="mb-2 mb-sm-5 clickable">Real Estate</h4>
+            <h4 class="mb-2 mb-sm-5 clickable" @click="$router.push('/about')">
+              About
+            </h4>
+            <h4
+              class="mb-2 mb-sm-5 clickable"
+              @click="$router.push('/contact')"
+            >
               Contact
             </h4>
-            <h4 class="mb-2 mb-sm-5" @click="$router.push('/faq')">FAQ</h4>
+            <h4 class="mb-2 mb-sm-5 clickable" @click="$router.push('/faq')">
+              FAQ
+            </h4>
           </div>
         </v-col>
         <v-col xs="12" sm="6" lg="4">
@@ -52,7 +67,9 @@
               ></v-img>
             </v-col>
           </v-row>
-          <p class="caption mt-6 mt-sm-8" @click="goToIG">View More Photos</p>
+          <p class="caption mt-6 mt-sm-8 clickable" @click="goToIG">
+            View More Photos
+          </p>
           <v-btn
             text
             outlined
@@ -120,4 +137,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.clickable {
+  cursor: pointer;
+}
+</style>

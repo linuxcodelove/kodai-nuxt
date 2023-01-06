@@ -14,7 +14,7 @@
           <div>
             <span
               v-if="!$vuetify.breakpoint.xs"
-              class="primary--text caption"
+              class="primary--text caption clickable"
               @click="$router.push(item.to)"
             >
               Read More...</span
@@ -62,7 +62,7 @@
           <div>
             <span
               v-if="!$vuetify.breakpoint.xs"
-              class="primary--text caption"
+              class="primary--text caption clickable"
               @click="$router.push(item.to)"
             >
               Read More...</span
@@ -105,7 +105,7 @@
           <div>
             <span
               v-if="!$vuetify.breakpoint.xs"
-              class="primary--text caption"
+              class="primary--text caption clickable"
               @click="$router.push(item.to)"
             >
               Read More...</span
@@ -169,5 +169,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+}
+.clickable {
+  cursor: pointer;
 }
 </style>
