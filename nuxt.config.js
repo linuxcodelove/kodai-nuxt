@@ -2,7 +2,6 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  mode: "universal",
   target: "static",
   head: {
     titleTemplate: "%s - Book Cottages and Resorts in Kodaikanal",
