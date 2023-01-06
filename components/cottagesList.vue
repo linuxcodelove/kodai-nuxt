@@ -63,7 +63,7 @@ export default {
     },
     initialise() {
       this.$axios
-        .get("https://kodaiguide.in/cottagelist.json", {
+        .get("https://kodaiguide.in/cottages2.json", {
           "content-type": "application/json",
         })
         .then((res) => {
@@ -71,7 +71,7 @@ export default {
         });
     },
   },
-  created() {
+  mounted() {
     this.initialise();
   },
 };
