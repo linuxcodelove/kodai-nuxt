@@ -44,6 +44,19 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Cottages",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Treat yourself to an overnight stay somewhere special. It's your chance to discover Kodaikanal and all it has to offer. We provide various types of stays such as Individual cottages, Service apartments, Villa's, Home stays, Tent stays, Wood houses, Tree houses, Forest bungalows, Star category resorts and Hotel rooms. Please view our 100+ cottages and resorts to book your space.",
+        },
+      ],
+    };
+  },
   data() {
     return {
       items: [

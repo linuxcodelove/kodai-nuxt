@@ -17,6 +17,19 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "About",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "We Guarantee you with our best packages for holiday tours & travels in kodaikanal. Our team spends their major focus on giving safe & secured trips. Our expert trip makers guide you by giving the complete information on the trip and live guidance.",
+        },
+      ],
+    };
+  },
   data() {
     return {
       isLoaded: false,
