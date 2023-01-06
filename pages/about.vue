@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <loader v-if="!isLoaded"></loader> -->
+    <loader v-if="!isLoaded"></loader>
     <banner img="about" subtitle=""></banner>
     <what-we-do></what-we-do>
     <booking-form @close="snackbarMessage"></booking-form>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <loader v-if="!isLoaded"></loader> -->
+    <loader v-if="!isLoaded"></loader>
     <carousel
       :items="items"
       title="welcome to"

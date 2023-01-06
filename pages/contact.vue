@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <loader v-if="!isLoaded"></loader> -->
+    <loader v-if="!isLoaded"></loader>
     <banner img="contact" title="" subtitle=""></banner>
     <div class="accent">
       <v-container>
