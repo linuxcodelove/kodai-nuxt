@@ -49,6 +49,7 @@
           </v-col>
           <v-col cols="12">
             <v-textarea
+              v-model="form.comments"
               label="Your comments"
               outlined
               hide-details
@@ -129,36 +130,34 @@ export default {
       this.sendEmail();
     },
     sendEmail() {
-      this.$loadScript("https://smtpjs.com/v3/smtp.js").then(() => {
-        window.Email.send({
-          SecureToken: "6c71e80d-9c63-4bce-9c58-52cb8b662cfc",
-          To: "enquiry@kodaiguide.in",
-          From: "service@kodaiguide.in",
-          Subject: "Booking Cottage",
-          Body: `Hi Team<br/>
+      Email.send({
+        SecureToken: "6c71e80d-9c63-4bce-9c58-52cb8b662cfc",
+        To: "enquiry@kodaiguide.in",
+        From: "service@kodaiguide.in",
+        Subject: "Booking Cottage",
+        Body: `Hi Team<br/>
           Name: ${this.form.name},<br/>
           Mobile: ${this.form.phone},<br/>
           Email: ${this.form.email},<br/>
           Comments: ${this.form.comments},<br/>
           Thanks<br/>
           Team Kodai Guide`,
-        }).then(
-          () => {
-            this.form = {};
-            this.$emit(
-              "close",
-              "Your message has been submitted!. We will get back you asap!",
-              "green"
-            );
-            setTimeout(() => {
-              location.reload();
-            }, 500);
-          },
-          (error) => {
-            console.log(error.text, "failed");
-          }
-        );
-      });
+      }).then(
+        () => {
+          this.form = {};
+          this.$emit(
+            "close",
+            "Your message has been submitted!. We will get back you asap!",
+            "green"
+          );
+          setTimeout(() => {
+            location.reload();
+          }, 500);
+        },
+        (error) => {
+          console.log(error.text, "failed");
+        }
+      );
     },
   },
 };

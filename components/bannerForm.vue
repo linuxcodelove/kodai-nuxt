@@ -211,13 +211,13 @@ export default {
       this.sendEmail();
     },
     sendEmail() {
-      this.$loadScript("https://smtpjs.com/v3/smtp.js").then(() => {
-        window.Email.send({
-          SecureToken: "6c71e80d-9c63-4bce-9c58-52cb8b662cfc",
-          To: "enquiry@kodaiguide.in",
-          From: "service@kodaiguide.in",
-          Subject: "Booking Cottage",
-          Body: `Hi Team<br/>
+      window.Email.send({
+        SecureToken: "6c71e80d-9c63-4bce-9c58-52cb8b662cfc",
+        To: "muthu@ardhika.com",
+        // To: "enquiry@kodaiguide.in",
+        From: "service@kodaiguide.in",
+        Subject: "Booking Cottage",
+        Body: `Hi Team<br/>
           Name: ${this.form.name},<br/>
           Mobile: ${this.form.phone},<br/>
           Email: ${this.form.email},<br/>
@@ -225,23 +225,22 @@ export default {
           No. of Adults: ${this.form.adults},<br/>
           Thanks<br/>
           Team Kodai Guide`,
-        }).then(
-          () => {
-            this.form = {};
-            this.$emit(
-              "close",
-              "Your message has been submitted!. We will get back you asap!",
-              "green"
-            );
-            setTimeout(() => {
-              location.reload();
-            }, 500);
-          },
-          (error) => {
-            console.log(error.text, "failed");
-          }
-        );
-      });
+      }).then(
+        () => {
+          this.form = {};
+          this.$emit(
+            "close",
+            "Your message has been submitted!. We will get back you asap!",
+            "green"
+          );
+          setTimeout(() => {
+            location.reload();
+          }, 500);
+        },
+        (error) => {
+          console.log(error.text, "failed");
+        }
+      );
     },
     saveData(msg) {
       this.dialog = false;

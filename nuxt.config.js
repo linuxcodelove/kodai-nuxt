@@ -5,6 +5,9 @@ export default {
   head: {
     titleTemplate: "%s - kodai",
     title: "kodai",
+    script: [
+      { hid: "stripe", src: "https://smtpjs.com/v3/smtp.js", defer: true },
+    ],
     htmlAttrs: {
       lang: "en",
     },
