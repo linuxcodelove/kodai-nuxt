@@ -6,11 +6,9 @@
           <v-card class="primary pa-1 pa-sm-2">
             <v-img
               :height="imageHeight"
-              :lazy-src="selectedImage"
-              :src="selectedImage"
+              :lazy-src="require(`../assets/cottages/${selectedImage}`)"
+              :src="require(`../assets/cottages/${selectedImage}`)"
             ></v-img>
-            <!-- :lazy-src="require(`../assets/cottages/${selectedImage}`)" -->
-            <!-- :src="require(`../assets/cottages/${selectedImage}`)" -->
           </v-card>
         </v-col>
         <v-col cols="12" v-if="$vuetify.breakpoint.xs">
@@ -25,11 +23,9 @@
               <v-card class="primary pa-1">
                 <v-img
                   :height="subImageHeight"
-                  :src="image"
-                  :lazy-src="image"
+                  :src="require(`../assets/cottages/${image}`)"
+                  :lazy-src="require(`../assets/cottages/${image}`)"
                 ></v-img>
-                <!-- :src="require(`../assets/cottages/${image}`)" -->
-                <!-- :lazy-src="require(`../assets/cottages/${image}`)" -->
               </v-card>
             </v-col>
           </v-row>
@@ -89,11 +85,9 @@
           <v-card class="primary pa-1">
             <v-img
               :height="subImageHeight"
-              :src="image"
-              :lazy-src="image"
+              :src="require(`../assets/cottages/${image}`)"
+              :lazy-src="require(`../assets/cottages/${image}`)"
             ></v-img>
-            <!-- :src="require(`../assets/cottages/${image}`)" -->
-            <!-- :lazy-src="require(`../assets/cottages/${image}`)" -->
           </v-card>
         </v-col>
       </v-row>

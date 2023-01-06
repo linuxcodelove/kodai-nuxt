@@ -63,11 +63,12 @@ export default {
     },
     initialise() {
       this.$axios
-        .get("https://kodaiguide.in/cottages3.json", {
+        .get("https://kodaiguide.in/cottages4.json", {
           "content-type": "application/json",
         })
         .then((res) => {
-          this.cottages = res.data.cottages;
+          console.log(res.data.cottegesimgs);
+          this.cottages = res.data.cottegesimgs;
         });
     },
   },
