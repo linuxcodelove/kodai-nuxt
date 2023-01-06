@@ -67,7 +67,6 @@ export default {
           "content-type": "application/json",
         })
         .then((res) => {
-          console.log(res.data.cottegesimgs);
           this.cottages = res.data.cottegesimgs;
         });
     },
