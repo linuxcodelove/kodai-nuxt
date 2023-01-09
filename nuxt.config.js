@@ -115,7 +115,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios", "nuxt-seo"],
+  modules: ["@nuxtjs/axios", "nuxt-seo", "nuxt-sitemap"],
 
   // axios: {
   //   baseURL: "/",
