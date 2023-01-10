@@ -89,6 +89,10 @@ export default {
         content:
           "https://lh3.googleusercontent.com/p/AF1QipPvk0vxEj3ekof7kFl5hukJ2VFbugyMDAsgB8bF=s680-w680-h510",
       },
+      {
+        name: "google-site-verification",
+        content: "NINwSbwrOskafYi00LtfoqU9ZhylLszTaL0iyH7OLVc",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/kodailogo.jpg" },
@@ -116,9 +120,9 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/axios", "nuxt-seo", "nuxt-sitemap"],
-  // sitemap: {
-  //   hostname: process.env.SITEMAP_HOSTNAME,
-  // },
+  sitemap: {
+    hostname: "https://kodaiguide.in",
+  },
 
   // axios: {
   //   baseURL: "/",
