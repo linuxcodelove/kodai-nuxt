@@ -27,10 +27,10 @@ export default {
         content:
           "best cottages in kodaikanal , 3 bedroom cottages in kodaikanal, 2 bedroom cottages in kodaikanal, family cottages in kodaikanal, independent cottages in kodaikanal, Villas in kodaikanal, wooden cottages in kodaikanal, cottages in kodaikanal for couples, Resorts in Kodaikanal, Hotel Rooms in Kodaikanal, Cheap cottages in kodaikanal, low budget cottages in Kodaikanal, Wood house in Kodaikanal, Cottages in vattakanal, cottages with view in kodaikanal.",
       },
-      {
-        name: "robots",
-        content: "index, follow",
-      },
+      // {
+      //   name: "robots",
+      //   content: "index, follow",
+      // },
       {
         httpEquiv: "Content-Type",
         content: "text/html; charset=utf-8",
