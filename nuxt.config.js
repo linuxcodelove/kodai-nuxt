@@ -43,51 +43,62 @@ export default {
         content: "English",
       },
       {
+        hid: "og:title",
         property: "og:title",
         content:
           "Kodaikanl TripAdvisor - Book Cottages and Resorts in Kodaikanal",
       },
       {
+        hid: "og:site_name",
         property: "og:site_name",
         content: "Kodaikanal TripAdvisor",
       },
       {
+        hid: "og:url",
         property: "og:url",
         content: "https://www.kodaiguide.in",
       },
       {
+        hid: "og:description",
         property: "og:description",
         content:
           "We Guarantee you with our best packages for holiday tours &amp; travels in Kodaikanal. Our team spends its major focus on giving safe &amp; secure trips. Our expert trip makers guide you by giving complete information on the trip and live guidance",
       },
       {
+        hid: "og:type",
         property: "og:type",
         content: "website",
       },
       {
+        hid: "og:image",
         property: "og:image",
         content:
           "https://lh3.googleusercontent.com/p/AF1QipPvk0vxEj3ekof7kFl5hukJ2VFbugyMDAsgB8bF=s680-w680-h510",
       },
       {
+        hid: "twitter:card",
         name: "twitter:card",
         content: "summary",
       },
       {
+        hid: "twitter:site",
         name: "twitter:site",
         content: "@Kodaikanal TripAdvisor",
       },
       {
+        hid: "twitter:title",
         name: "twitter:title",
         content:
           "Kodaikanl TripAdvisor - Book Cottages and Resorts in Kodaikanal",
       },
       {
+        hid: "twitter:description",
         name: "twitter:description",
         content:
           "We Guarantee you our best packages for holiday tours &amp; travels in Kodaikanal. Our team spends its major focus on giving safe &amp; secure trips. Our expert trip makers guide you by giving complete",
       },
       {
+        hid: "twitter:image",
         name: "twitter:image",
         content:
           "https://lh3.googleusercontent.com/p/AF1QipPvk0vxEj3ekof7kFl5hukJ2VFbugyMDAsgB8bF=s680-w680-h510",
@@ -100,6 +111,7 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/kodailogo.jpg" },
       {
+        hid: "canonical",
         rel: "canonical",
         href: "https://www.kodaiguide.in/",
       },
