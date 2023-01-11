@@ -1,5 +1,3 @@
-import colors from "vuetify/es5/util/colors";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
@@ -32,6 +30,10 @@ export default {
       //   name: "robots",
       //   content: "index, follow",
       // },
+      {
+        name: "robots",
+        content: "follow",
+      },
       {
         httpEquiv: "Content-Type",
         content: "text/html; charset=utf-8",
