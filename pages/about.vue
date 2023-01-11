@@ -28,12 +28,12 @@ export default {
             "We Guarantee you with our best packages for holiday tours & travels in kodaikanal. Our team spends their major focus on giving safe & secured trips. Our expert trip makers guide you by giving the complete information on the trip and live guidance.",
         },
       ],
-      link: [
-        {
-          rel: "canonical",
-          href: "https://www.kodaiguide.in/about",
-        },
-      ],
+      // link: [
+      //   {
+      //     rel: "canonical",
+      //     href: "https://www.kodaiguide.in/about",
+      //   },
+      // ],
     };
   },
   data() {
