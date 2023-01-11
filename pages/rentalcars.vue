@@ -85,6 +85,12 @@ export default {
             "We have exhaustive list of vehicles available for rent in kodaikanal. We arrange Inner City, Outer City, One way and Round trip travel services in and around kodaikanal. Our tour packages includes Stay arrangements, rental vehicles for site seeing, activities such as Trekking, Jeep Safari, Jungle Ride, Off Roading, Camp fire with music, Cycling, Boating and Horse riding. We offers various packages for Honey Moon Couples, Family Vacation, Group Stay and Solo Travelers",
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://www.kodaiguide.in/rentalcars",
+        },
+      ],
     };
   },
   data() {
