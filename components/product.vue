@@ -37,6 +37,7 @@
               :src="require(`../assets/home/services/${item.src}.jpg`)"
               :lazy-src="require(`../assets/home/services/${item.src}.jpg`)"
               :height="imageHeight"
+              eager
             ></v-img>
           </v-container>
         </v-col>
@@ -49,6 +50,7 @@
               :src="require(`../assets/home/services/${item.src}.jpg`)"
               :lazy-src="require(`../assets/home/services/${item.src}.jpg`)"
               :height="imageHeight"
+              eager
             ></v-img>
           </v-container>
         </v-col>
@@ -93,6 +95,7 @@
               :src="require(`../assets/home/services/${item.src}.jpg`)"
               :lazy-src="require(`../assets/home/services/${item.src}.jpg`)"
               :height="imageHeight"
+              eager
             ></v-img>
           </v-container>
         </v-col>

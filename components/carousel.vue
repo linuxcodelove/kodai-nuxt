@@ -13,6 +13,7 @@
         :key="i"
         :src="require(`../assets/home/carousel/${item.src}.jpg`)"
         :lazy-src="require(`../assets/home/carousel/${item.src}.jpg`)"
+        eager
         @mouseover="cycle = false"
         @mouseleave="cycle = true"
         class="carouselform"
